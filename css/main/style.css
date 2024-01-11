@@ -63,7 +63,7 @@ body{
 }
 .header::before{
     content: "";
-    background: linear-gradient(91deg, rgba(0, 0, 0, 0.85) 2.66%, rgba(0, 0, 0, 0.58), 48.51%, rgba(0, 0, 0, 0.00) 99.39%), url("..../img/header/1.jpg") lightgray 50% / cover no-repeat;
+    background: linear-gradient(91deg, rgba(0, 0, 0, 0.85) 2.66%, rgba(0, 0, 0, 0.58), 48.51%, rgba(0, 0, 0, 0.00) 99.39%), url("img/header/1.jpg") lightgray 50% / cover no-repeat;
     mix-blend-mode: darken;
     background-position: center;
     position: absolute;
