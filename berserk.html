@@ -35,13 +35,12 @@
                 <button type="button" id="modal-window__close">X</button>
             </div>
             <div class="menu__auth-tochoose">
-                <button class="menu__auth-loginbtn" id="login">ВХОД</button>
-                <button class="menu__auth-regbtn" id="rgstr">РЕГЕСТРАЦИЯ</button>
+                <button class="menu__auth-loginbtn">ВХОД</button>
             </div>
             <div class="menu__auth-username">
                 <div class="menu__username-input">
                     <input class="menu__username-input_input" type="text" placeholder=" ">
-                    <label id="label" for="">Логин</label>
+                    <label class="label">Логин</label>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8" height="11" viewBox="0 0 8 11" fill="none">
                         <path d="M0 10.9999H8V9.03565C7.99915 8.30656 7.70388 7.60757 7.17896 7.09202C6.65405 6.57648 5.94235 6.28648 5.2 6.28564H2.8C2.05765 6.28648 1.34595 6.57648 0.821037 7.09202C0.296118 7.60757 0.000846945 8.30656 0 9.03565V10.9999Z" fill="#403A4B" fill-opacity="0.6"/>
                         <path d="M1.19971 2.75C1.19971 3.2939 1.36392 3.82559 1.67159 4.27782C1.97926 4.73006 2.41656 5.08253 2.92819 5.29068C3.43983 5.49882 4.00281 5.55328 4.54596 5.44717C5.08911 5.34106 5.58802 5.07914 5.97961 4.69455C6.37119 4.30995 6.63787 3.81995 6.74591 3.2865C6.85394 2.75305 6.79849 2.20012 6.58657 1.69762C6.37464 1.19513 6.01576 0.765633 5.5553 0.463459C5.09485 0.161285 4.55349 0 3.99971 0C3.2571 0 2.54491 0.289732 2.01981 0.805457C1.49471 1.32118 1.19971 2.02066 1.19971 2.75Z" fill="#403A4B" fill-opacity="0.6"/>
@@ -51,7 +50,7 @@
             <div class="menu__auth-password">
                 <div class="menu__password-input">
                     <input class = "menu__password-input_input" type="password" placeholder=" ">
-                    <label id="label" for="">Пароль</label>
+                    <label class="label">Пароль</label>
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
                         <path d="M11.9655 4.1621C11.9479 4.2016 11.5245 5.1409 10.5828 6.0826C9.32864 7.33695 7.74385 8 6 8C4.25615 8 2.67135 7.337 1.41716 6.08265C0.475458 5.1409 0.0520088 4.20155 0.0344588 4.16205C0.011739 4.11091 0 4.05556 0 3.9996C0 3.94364 0.011739 3.8883 0.0344588 3.83715C0.0520588 3.79765 0.475458 2.85855 1.41721 1.91695C2.6714 0.6629 4.2561 0 6 0C7.7439 0 9.3286 0.6629 10.5828 1.91695C11.5245 2.85855 11.9479 3.7976 11.9655 3.83715C11.9883 3.8883 12 3.94364 12 3.9996C12 4.05556 11.9882 4.11096 11.9655 4.1621ZM6 5.7996C6.35601 5.7996 6.70402 5.69403 7.00002 5.49625C7.29603 5.29846 7.52674 5.01734 7.66298 4.68843C7.79922 4.35952 7.83486 3.9976 7.76541 3.64844C7.69596 3.29927 7.52452 2.97854 7.27279 2.72681C7.02106 2.47507 6.70033 2.30364 6.35116 2.23419C6.002 2.16473 5.64008 2.20038 5.31117 2.33662C4.98226 2.47285 4.70114 2.70356 4.50336 2.99957C4.30557 3.29558 4.2 3.64359 4.2 3.9996C4.20053 4.47683 4.39034 4.93436 4.72779 5.27181C5.06524 5.60926 5.52277 5.79907 6 5.7996Z" fill="#403A4B" fill-opacity="0.6"/>
                     </svg>
@@ -61,6 +60,7 @@
                 <button type="submit">Войти</button>
             </div>
             <hr>
+            <div class="menu__auth-text">Если у вас нет аккаунта, то вы можете <span id="login>reg">зарегистрироваться</span></div>
         </form>
     </div>
     <div class="modal-blackout" id="modal-window-reg">
@@ -69,8 +69,7 @@
                 <button type="button" id="modal-window__close-reg">X</button>
             </div>
             <div class="menu__auth-tochoose">
-                <button class="menu__auth-loginbtn" id="login">ВХОД</button>
-                <button class="menu__auth-regbtn" id="rgstr">РЕГЕСТРАЦИЯ</button>
+                <button class="menu__auth-regbtn">РЕГИСТРАЦИЯ</button>
             </div>
             <div class="menu__auth-username">
                 <div class="menu__username-input">
@@ -85,14 +84,14 @@
             <div class="menu__auth-username">
                 <div class="menu__username-input">
                     <input class="menu__username-input_input" type="email" placeholder=" ">
-                    <label id="label" for="">email</label>
+                    <label id="label">email</label>
                     <svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#323232" stroke-width="2"></path> <path d="M17 19.4845C15.5699 20.4417 13.8501 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16 16 16 16 12" stroke="#323232" stroke-width="2" stroke-linecap="round"></path> </g></svg>
                 </div>
             </div>
             <div class="menu__auth-password">
                 <div class="menu__password-input">
                     <input class = "menu__password-input_input" type="password" placeholder=" ">
-                    <label id="label" for="">Пароль</label>
+                    <label id="label">Пароль</label>
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
                         <path d="M11.9655 4.1621C11.9479 4.2016 11.5245 5.1409 10.5828 6.0826C9.32864 7.33695 7.74385 8 6 8C4.25615 8 2.67135 7.337 1.41716 6.08265C0.475458 5.1409 0.0520088 4.20155 0.0344588 4.16205C0.011739 4.11091 0 4.05556 0 3.9996C0 3.94364 0.011739 3.8883 0.0344588 3.83715C0.0520588 3.79765 0.475458 2.85855 1.41721 1.91695C2.6714 0.6629 4.2561 0 6 0C7.7439 0 9.3286 0.6629 10.5828 1.91695C11.5245 2.85855 11.9479 3.7976 11.9655 3.83715C11.9883 3.8883 12 3.94364 12 3.9996C12 4.05556 11.9882 4.11096 11.9655 4.1621ZM6 5.7996C6.35601 5.7996 6.70402 5.69403 7.00002 5.49625C7.29603 5.29846 7.52674 5.01734 7.66298 4.68843C7.79922 4.35952 7.83486 3.9976 7.76541 3.64844C7.69596 3.29927 7.52452 2.97854 7.27279 2.72681C7.02106 2.47507 6.70033 2.30364 6.35116 2.23419C6.002 2.16473 5.64008 2.20038 5.31117 2.33662C4.98226 2.47285 4.70114 2.70356 4.50336 2.99957C4.30557 3.29558 4.2 3.64359 4.2 3.9996C4.20053 4.47683 4.39034 4.93436 4.72779 5.27181C5.06524 5.60926 5.52277 5.79907 6 5.7996Z" fill="#403A4B" fill-opacity="0.6"/>
                     </svg>
@@ -102,6 +101,7 @@
                 <button type="submit">Войти</button>
             </div>
             <hr>
+            <div class="menu__auth-text">Если уже зарегистрировались, то вы можете <span id="reg>login">войти</span> в свой аккаунт.</div>
         </form>
     </div>
     <div class="wrapper">
@@ -180,7 +180,7 @@
                 <div class="anime-episodes__box">24</div>
                 <div class="anime-episodes__box">25</div>
             </div>
-            <iframe width=100% height=900px src=https://video.sibnet.ru/shell.php?videoid=4191199&share=1></iframe>
+            
         </div>
     </div>
     <script src="./js/script.js"></script>

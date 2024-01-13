@@ -19,7 +19,7 @@ button {
 }
 
 hr {
-  margin: 30px 0px 30px 0px;
+  margin: 15px 0;
   border: 1px solid rgba(0, 0, 0, 0.34);
   display: block;
 }
@@ -252,8 +252,14 @@ hr {
   transition: 0.5s ease;
 }
 
-#modal-window-reg {
-  opacity: 10000000000;
+.menu__auth-text {
+  line-height: 20px;
+}
+
+.menu__auth-text span {
+  font-weight: 700;
+  color: #666;
+  cursor: pointer;
 }
 
 /* header */
