@@ -6,7 +6,7 @@ document.getElementById("login").addEventListener("click", function() {
     document.getElementById("modal-window").classList.add("open")
 })
 document.getElementById("modal-window__close").addEventListener("click", function() {
-    document.getElementById("modal~-window").classList.remove("open")
+    document.getElementById("modal-window").classList.remove("open")
 })
 
 // Modal window 2
