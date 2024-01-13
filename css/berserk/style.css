@@ -1,3 +1,188 @@
+
+hr {
+    margin: 30px 0px 30px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.34);
+    display: block;
+}
+button {
+    cursor: pointer;
+}
+.modal-blackout {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.58);
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu__auth-login {
+    position: fixed;
+    max-width: 275px;
+    max-height: 350px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    margin: 0px auto;
+    align-self: center;
+    border-radius: 15px;
+    padding: 88px 90px 88px 90px;
+    box-shadow: 0px 0px 15px 6px rgba(255, 255, 255, 0.25);
+  }
+  
+  .menu__auth-tochoose button {
+    border: 0;
+    font-size: 20px;
+    padding: 0;
+    font-weight: 700;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .menu__auth-tochoose {
+    margin-bottom: 40px;
+  }
+  
+  .menu__auth-loginbtn {
+    margin-right: 10px;
+  }
+  
+  .menu__auth-username,
+  .menu__auth-password {
+    width: 100%;
+  }
+  
+.menu__auth-username {
+    margin-bottom: 10px;
+}
+  
+.menu__auth-username,
+.menu__auth-password {
+    position: relative;
+    margin-bottom: 30px;
+}
+  
+.menu__auth-username input,
+.menu__auth-password input {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    width: 100%;
+    padding: 0 0 8px 0;
+    border: none;
+    border-bottom: 2px solid rgb(160, 160, 160);
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+  
+.menu__username-input_input:focus,
+.menu__password-input_input:focus {
+  outline: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+  
+.menu__auth-username label,
+.menu__auth-password label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.324);
+    transition: 0.5s ease;
+    font-size: 20px;
+    z-index: -1;
+}
+  
+.menu__username-input_input:not(:-moz-placeholder-shown) ~ label, .menu__password-input_input:not(:-moz-placeholder-shown) ~ label {
+    top: -17px;
+    font-size: 15px;
+}
+  
+.menu__username-input_input:focus ~ label,
+.menu__password-input_input:focus ~ label,
+.menu__username-input_input:not(:placeholder-shown) ~ label,
+.menu__password-input_input:not(:placeholder-shown) ~ label {
+    top: -17px;
+    font-size: 15px;
+ }
+  
+.menu__auth-username svg {
+    position: absolute;
+    top: 10px;
+    right: 17px;
+}
+  
+ .menu__auth-password svg {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+ }
+  
+ .menu__auth-btn button {
+    width: 100%;
+    font-family: Montserrat, sans-serif;
+    padding: 15px 0px 15px 0px;
+    font-size: 20px;
+    transition: 0.5s ease;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 8px;
+ }
+  
+.menu__auth-btn button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+ }
+  
+ .menu__auth-btn {
+    width: 100%;
+    transition: 0.5s ease;
+}
+  
+.menu__auth-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+ }
+  
+.menu__auth-close button {
+    font-size: 30px;
+    border: 0px;
+    background-color: transparent;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+}
+  
+.modal-blackout {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+  
+.modal-blackout.open {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+  
+.modal-blackout-reg {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+  
+.modal-blackout-reg.open {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+  
+#modal-window-reg {
+    opacity: 10000000000;
+}  
 .anime__title{
     font-size: 60px;
     font-weight: 500;

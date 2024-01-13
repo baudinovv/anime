@@ -1,0 +1,19 @@
+
+
+// Modal window 1
+
+document.getElementById("login").addEventListener("click", function() {
+    document.getElementById("modal-window").classList.add("open")
+})
+document.getElementById("modal-window__close").addEventListener("click", function() {
+    document.getElementById("modal~-window").classList.remove("open")
+})
+
+// Modal window 2
+
+document.getElementById("rgstr").addEventListener("click", function() {
+    document.getElementById("modal-window-reg").classList.add("open")
+})
+document.getElementById("modal-window__close-reg").addEventListener("click", function() {
+    document.getElementById("modal-window-reg").classList.remove("open")
+})
