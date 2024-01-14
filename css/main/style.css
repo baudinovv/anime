@@ -24,6 +24,10 @@ hr {
   display: block;
 }
 
+iframe {
+  width: 100%;
+}
+
 /* Menu */
 .menu {
   background: rgba(0, 0, 0, 0.58);

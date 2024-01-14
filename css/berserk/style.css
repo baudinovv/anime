@@ -1,4 +1,5 @@
 
+/* Modal window */
 .modal-blackout {
     width: 100%;
     height: 100%;
@@ -48,18 +49,18 @@
     width: 100%;
   }
   
-.menu__auth-username {
+  .menu__auth-username {
     margin-bottom: 10px;
-}
+  }
   
-.menu__auth-username,
-.menu__auth-password {
+  .menu__auth-username,
+  .menu__auth-password {
     position: relative;
     margin-bottom: 30px;
-}
+  }
   
-.menu__auth-username input,
-.menu__auth-password input {
+  .menu__auth-username input,
+  .menu__auth-password input {
     font-family: Montserrat, sans-serif;
     font-size: 20px;
     width: 100%;
@@ -68,16 +69,16 @@
     border-bottom: 2px solid rgb(160, 160, 160);
     background-color: transparent;
     transition: 0.5s ease;
-}
+  }
   
-.menu__username-input_input:focus,
-.menu__password-input_input:focus {
-  outline: none;
+  .menu__username-input_input:focus,
+  .menu__password-input_input:focus {
+    outline: none;
     border-bottom: 2px solid rgb(0, 0, 0);
-}
+  }
   
-.menu__auth-username label,
-.menu__auth-password label {
+  .menu__auth-username label,
+  .menu__auth-password label {
     position: absolute;
     top: 0;
     left: 0;
@@ -85,34 +86,34 @@
     transition: 0.5s ease;
     font-size: 20px;
     z-index: -1;
-}
+  }
   
-.menu__username-input_input:not(:-moz-placeholder-shown) ~ label, .menu__password-input_input:not(:-moz-placeholder-shown) ~ label {
+  .menu__username-input_input:not(:-moz-placeholder-shown) ~ label, .menu__password-input_input:not(:-moz-placeholder-shown) ~ label {
     top: -17px;
     font-size: 15px;
-}
+  }
   
-.menu__username-input_input:focus ~ label,
-.menu__password-input_input:focus ~ label,
-.menu__username-input_input:not(:placeholder-shown) ~ label,
-.menu__password-input_input:not(:placeholder-shown) ~ label {
+  .menu__username-input_input:focus ~ label,
+  .menu__password-input_input:focus ~ label,
+  .menu__username-input_input:not(:placeholder-shown) ~ label,
+  .menu__password-input_input:not(:placeholder-shown) ~ label {
     top: -17px;
     font-size: 15px;
- }
+  }
   
-.menu__auth-username svg {
+  .menu__auth-username svg {
     position: absolute;
     top: 10px;
     right: 17px;
-}
+  }
   
- .menu__auth-password svg {
+  .menu__auth-password svg {
     position: absolute;
     top: 10px;
     right: 15px;
- }
+  }
   
- .menu__auth-btn button {
+  .menu__auth-btn button {
     width: 100%;
     font-family: Montserrat, sans-serif;
     padding: 15px 0px 15px 0px;
@@ -121,60 +122,67 @@
     font-weight: 700;
     border: 1px solid black;
     border-radius: 8px;
- }
+  }
   
-.menu__auth-btn button:hover {
+  .menu__auth-btn button:hover {
     background-color: black;
     color: white;
     transition: 0.5s ease;
- }
+  }
   
- .menu__auth-btn {
+  .menu__auth-btn {
     width: 100%;
     transition: 0.5s ease;
-}
+  }
   
-.menu__auth-close {
+  .menu__auth-close {
     position: absolute;
     top: 20px;
     right: 20px;
- }
+  }
   
-.menu__auth-close button {
+  .menu__auth-close button {
     font-size: 30px;
     border: 0px;
     background-color: transparent;
     font-family: Montserrat, sans-serif;
     font-weight: 300;
-}
+  }
   
-.modal-blackout {
+  .modal-blackout {
     visibility: hidden;
     opacity: 0;
     transition: 0.5s ease;
-}
+  }
   
-.modal-blackout.open {
+  .modal-blackout.open {
     visibility: visible;
     opacity: 1;
     transition: 0.5s ease;
-}
+  }
   
-.modal-blackout-reg {
+  .modal-blackout-reg {
     visibility: hidden;
     opacity: 0;
     transition: 0.5s ease;
-}
+  }
   
-.modal-blackout-reg.open {
+  .modal-blackout-reg.open {
     visibility: visible;
     opacity: 1;
     transition: 0.5s ease;
-}
+  }
   
-#modal-window-reg {
-    opacity: 10000000000;
-}  
+  .menu__auth-text {
+    line-height: 20px;
+  }
+  
+  .menu__auth-text span {
+    font-weight: 700;
+    color: #666;
+    cursor: pointer;
+  }
+  
 .anime__title{
     font-size: 60px;
     font-weight: 500;
