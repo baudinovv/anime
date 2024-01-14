@@ -57,6 +57,7 @@ iframe {
   text-decoration: none;
   font-weight: 500;
   color: white;
+  font-size: 20px;
 }
 
 .menu__auth {
@@ -71,6 +72,7 @@ iframe {
   border: none;
   outline: none;
   font-family: Montserrat, sans-serif;
+  font-size: 20px;
 }
 
 .menu__auth nav {
