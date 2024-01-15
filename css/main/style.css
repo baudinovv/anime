@@ -173,11 +173,6 @@ iframe {
   z-index: -1;
 }
 
-.menu__username-input_input:not(:-moz-placeholder-shown) ~ label, .menu__password-input_input:not(:-moz-placeholder-shown) ~ label {
-  top: -17px;
-  font-size: 15px;
-}
-
 .menu__username-input_input:focus ~ label,
 .menu__password-input_input:focus ~ label,
 .menu__username-input_input:not(:placeholder-shown) ~ label,
@@ -445,4 +440,4 @@ iframe {
   color: #666;
   margin: 0 auto;
   max-width: 54px;
-}
+}/*# sourceMappingURL=style.css.map */
