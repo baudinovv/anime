@@ -33,8 +33,8 @@ $(document).ready(function(){
     $('.ongoing__slider').slick({
         slidesToShow: 5,
         slidesToScroll: 5,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
-        // Infinity: true,
+        infinite: true,
     });
 });
