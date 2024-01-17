@@ -413,8 +413,6 @@ iframe{
 .slick-next{
     right: -40px;
 }
-
-
 /* - New */
 
 .new-content{
@@ -458,4 +456,55 @@ iframe{
     color: #666;
     margin: 0 auto;
     max-width: 54px;
+}
+// Media adaptive
+html {
+
+    overflow-x: hidden;
+    
+}
+@media screen and (max-width: 1420px) {
+    .header-content__picture img{
+        max-width: 100px;
+    }
+    .header-content__info{
+        max-height: 550px;
+    }
+    .header-info__title{
+        font-size: 45px;
+    }
+    .header-info__text{
+        font-size: 23px;
+    }    
+}
+@media screen and (max-width: 1280px) {
+    .new-cards__card img{
+        max-width: 250px;
+    }
+}
+@media screen and (max-height: 1050px) {
+    .header-content__picture img{
+        max-width: 400px;
+    }
+    .header-content__info{
+        max-height: 550px;
+    }
+}
+@media screen and (max-height: 775px) {
+    .header-content__picture img{
+        max-width: 360px;
+    }
+    .header-content__info{
+        max-height: 550px;
+    }
+    .header-info__title{
+        font-size: 45px;
+    }
+    .header-info__text{
+        font-size: 23px;
+    }
+    .menu__nav a,
+    .menu__auth button{
+        font-size: 15px;
+    }
 }
