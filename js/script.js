@@ -27,3 +27,14 @@ document.getElementById("reg>login").addEventListener("click", function() {
     document.getElementById("modal-window-reg").classList.remove("open")
     document.getElementById("modal-window").classList.add("open")
 })
+// slider
+
+$(document).ready(function(){
+    $('.ongoing__slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 3,
+        //autoplay: true,
+        autoplaySpeed: 2000,
+       // Infinity: true,
+    });
+});
