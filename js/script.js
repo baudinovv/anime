@@ -32,9 +32,9 @@ document.getElementById("reg>login").addEventListener("click", function() {
 $(document).ready(function(){
     $('.ongoing__slider').slick({
         slidesToShow: 5,
-        slidesToScroll: 3,
-        //autoplay: true,
+        slidesToScroll: 5,
+        // autoplay: true,
         autoplaySpeed: 2000,
-       // Infinity: true,
+        // Infinity: true,
     });
 });

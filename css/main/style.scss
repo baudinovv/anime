@@ -359,7 +359,10 @@ iframe{
 .ongoing-slider__title{
     font-size: 20px;
     color: white;
-    padding: 14px 121px;
+    padding: 14px 0;
+    width: 100%;
+    max-width: 336px;
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.47);
     position: absolute;
     bottom: 0;
@@ -367,10 +370,18 @@ iframe{
 .slick-arrow{
     position: absolute;
     outline: none;
-    font-size: 30px;
     background: none;
     border: none;
     z-index: 3;
+}
+.slick-arrow button{
+    background: none;
+}
+.slick-list :nth-child(2n){
+    background: url('../../img/ongoing/3.jpg'), lightgray 50% / cover no-repeat;
+}
+.slick-list :nth-child(3n){
+    background: url('../../img/ongoing/4.jpg'), lightgray 50% / cover no-repeat;
 }
 .slick-next::before{
     content: '';
@@ -382,6 +393,7 @@ iframe{
     width: 40px;
     height: 40px;
     transform: translate(-50%, -50%) rotate(-45deg);
+    right: -220px;
 }
 .slick-prev::before{
     content: '';
@@ -393,21 +405,16 @@ iframe{
     width: 40px;
     height: 40px;
     transform: translate(-50%, -50%) rotate(135deg);
+    left: -33px;
 }
 .slick-prev{
-    top: 270px;
-    left: -40px;
+    left: -20px;
 }
 .slick-next{
-    top: 270px;
     right: -40px;
 }
-.ongoing__slider :nth-child(2n){
-    background: url('../../img/ongoing/3.jpg'), lightgray 50% / cover no-repeat;
-}
-.ongoing__slider :nth-child(3n){
-    background: url('../../img/ongoing/4.jpg'), lightgray 50% / cover no-repeat;
-}
+
+
 /* - New */
 
 .new-content{
