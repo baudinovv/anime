@@ -38,3 +38,4 @@ $(document).ready(function(){
         infinite: true,
     });
 });
+alert(document.getElementsByName("loginput")[0].value);
