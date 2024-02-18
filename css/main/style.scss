@@ -10,6 +10,9 @@ body{
     margin: 0 auto;
     padding: 0px 50px 0px 50px;
 }
+.content{
+    max-width: 1680px;
+}
 button{
     cursor: pointer;
 }
@@ -29,10 +32,10 @@ iframe{
     z-index: 50;
 }
 .menu-content{
-    max-width: 1760px;
+    max-width: 1680px;
     display: flex;
     width: 100%;
-    padding: 32px 0px 32px 50px;
+    padding: 32px 0px 32px 0px;
     justify-content: space-between;
     top: 0px;
     margin: 0 auto;
@@ -245,6 +248,68 @@ iframe{
 
 .header{
     height: 100vh;
+    background: url('../../img/header/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__info {
+    align-self: center;
+}
+.header-content{
+    color: white;
+    margin: 0px auto;
+    display: flex;
+    height: 100%;
+}
+.header__title {
+    font-size: 110px;
+    font-weight: 500;
+    font-family: Bebas Neue; 
+    max-width: 650px;   
+}
+.header__text { 
+    font-weight: lighter;
+    font-size: 24px;
+    max-width: 600px;
+}
+.header__btns {
+    display: flex;
+    margin-top: 36px;
+}
+.header-btns__save {
+    justify-self: center;
+    align-self: center;
+}
+.header-btns__link a{
+    color: white;
+    margin-right: 200px;
+}
+.header-btns__link a{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 15px 46px 15px 46px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-left: 40px;
+}
+.header-slider{
+    max-width: 1500px;
+    height: 543px;
+    margin-left: 100px;
+    align-self: end;
+}
+.header-slider__cell{
+    background-color: black;
+    max-width: 274px;
+    max-height: 439px;
+    margin-right: 26px;
+    border-radius: 25px;
+}
+.header-slider__cell img{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
 }
 
 /* - Ongoing */
@@ -296,19 +361,13 @@ iframe{
 .slick-arrow button{
     background: none;
 }
-.slick-list :nth-child(2n){
-    background: url('../../img/ongoing/3.jpg'), lightgray 50% / cover no-repeat;
-}
-.slick-list :nth-child(3n){
-    background: url('../../img/ongoing/4.jpg'), lightgray 50% / cover no-repeat;
-}
 .slick-next::before{
     content: '';
     left: 0;
     top: 50%;
     display: block;
-    border-right: 5px solid rgb(0, 0, 0);
-    border-bottom: 5px solid rgb(0, 0, 0);
+    border-right: 5px solid rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(255, 255, 255);
     width: 40px;
     height: 40px;
     transform: translate(-50%, -50%) rotate(-45deg);
@@ -317,20 +376,19 @@ iframe{
 .slick-prev::before{
     content: '';
     left: 0;
-    top: 50%;
     display: block;
-    border-right: 5px solid rgb(0, 0, 0);
-    border-bottom: 5px solid rgb(0, 0, 0);
+    border-right: 5px solid rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(255, 255, 255);
     width: 40px;
     height: 40px;
     transform: translate(-50%, -50%) rotate(135deg);
     left: -33px;
 }
 .slick-prev{
-    left: -20px;
+    left: -70px;
 }
 .slick-next{
-    right: -40px;
+    left: -50px;
 }
 /* - New */
 
@@ -377,13 +435,12 @@ iframe{
     max-width: 54px;
 }
 // Media adaptive
-html {
+html,body {
 
     overflow-x: hidden;
     
 }
-@media screen and (max-width: 1420px) {   
-}
+
 @media screen and (max-width: 1280px) {
     .new-cards__card img{
         max-width: 250px;
@@ -397,10 +454,6 @@ html {
     .menu__nav{
         max-width: 600px;
     }
-}
-@media screen and (max-width: 1150px) {
-}
-@media screen and (max-width: 1105px) {
 }
 @media screen and (max-width: 930px) {
     .menu__nav{
