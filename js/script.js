@@ -41,7 +41,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.header-slider').slick({
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 2,
         autoplay: true,
         autoplaySpeed: 2000,
         infinite: true,
