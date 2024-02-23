@@ -30,20 +30,32 @@ document.getElementById("reg>login").addEventListener("click", function() {
 // slider
 
 $(document).ready(function(){
-    $('.ongoing__slider').slick({
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        infinite: true,
-    });
-});
-$(document).ready(function(){
     $('.header-slider').slick({
         slidesToShow: 4,
-        slidesToScroll: 2,
-        autoplay: true,
+        slidesToScroll: 1,
         autoplaySpeed: 2000,
         infinite: true,
     });
 });
+
+setInterval(timer, 1000);
+// timer
+let time = 86400 * 2;
+
+let htmlDays = document.getElementById("days");
+let htmlHours = document.getElementById("hours");
+let htmlMin = document.getElementById("minutes");
+let htmlSec = document.getElementById("sec");
+
+
+function timer(){
+    let days = Math.floor(time / 86400);
+    let hours = Math.floor(time / 3600) % 24;
+    let minutes = Math.floor(time / 60) % 60 ;
+    let seconds = time % 60;
+    htmlDays.innerHTML = `${days}`;
+    htmlHours.innerHTML = `${hours}`;
+    htmlMin.innerHTML = `${minutes}`;
+    htmlSec.innerHTML = `${seconds}`;
+    time--;
+}
