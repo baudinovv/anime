@@ -1,7 +1,7 @@
 
 // SCCS presets
 
-$fztitle: 45px;  
+$fztitle: 55px;  
 
 body a{
     text-decoration: none;
@@ -487,6 +487,52 @@ iframe{
 .blogs__title{
     text-transform: uppercase;
     font-size: $fztitle;
+}
+.blogs__main{
+    margin-top: 45px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.blogs-main__item{
+    background-color: rgb(14, 14, 14);
+    max-width: 543px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 25px;
+}
+.blogs-item__img img{
+    width: 100%;
+    height: 100%;
+}
+.blogs-item__subtitles {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.blogs-item__date,
+.blogs-item__type{
+    padding: 15px 15px;
+    font-size: 25px;
+    color: #666;
+}
+.blogs-item__title {
+    padding: 0px 15px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.blogs-item__authortitle {
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+}
+.blogs-authortitle__img img {
+    max-width: 56px;
+}
+.blogs-authortitle__username {
+    margin-left: 30px;
+    font-size: 25px;
 }
 
 // Media adaptive
